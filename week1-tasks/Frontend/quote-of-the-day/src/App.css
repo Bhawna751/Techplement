@@ -1,0 +1,26 @@
+body {
+  background: radial-gradient(circle, #000428, #004e92);
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.app-container {
+  backdrop-filter: blur(10px);
+}
+
+.MuiCard-root {
+  animation: glowing 2s infinite alternate;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  }
+}
+
